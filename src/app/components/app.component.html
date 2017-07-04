@@ -1,0 +1,10 @@
+<h1>{{ translate(hello) }}</h1>
+<h2>{{ translate(bye) }}</h2>
+<button
+  type="button"
+  *ngFor="let lang of langs"
+  (click)="useLang(lang)">
+  {{ lang }}
+</button>
+
+<app-child></app-child>
