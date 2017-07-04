@@ -8,10 +8,13 @@ import { TranslateService } from 'app/services/translate'
 import { AppComponent } from './components/app.component';
 import { ChildComponent } from './components/child/child.component';
 
+import { TranslatePipe } from './pipes/translate';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent
+    ChildComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,

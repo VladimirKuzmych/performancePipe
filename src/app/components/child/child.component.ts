@@ -1,5 +1,4 @@
 import { Component, DoCheck } from '@angular/core';
-import { TranslateService } from './../../services/translate';
 
 @Component({
   selector: 'app-child',
@@ -8,14 +7,10 @@ import { TranslateService } from './../../services/translate';
 })
 export class ChildComponent implements DoCheck {
   private counter = 0;
-  constructor(private translateService: TranslateService) {}
-
-  public translate(value) {
-    return this.translateService.translate(value);
-  }
+  constructor() {}
 
   ngDoCheck() {
-    console.log(`child ${++this.counter}`);
+    console.log(`Child DoCheck ${++this.counter}`);
   }
 
 }

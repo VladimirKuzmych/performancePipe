@@ -1,5 +1,5 @@
-<h1>{{ translate(hello) }}</h1>
-<h2>{{ translate(bye) }}</h2>
+<h1>{{ hello | translate }}</h1>
+<h2>{{ bye | translate }}</h2>
 <button
   type="button"
   *ngFor="let lang of langs"

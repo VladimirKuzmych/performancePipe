@@ -14,15 +14,11 @@ export class AppComponent implements DoCheck{
 
   constructor(private translateService: TranslateService) {}
 
-  public translate(value) {
-    return this.translateService.translate(value);
-  }
-
   public useLang(lang) {
     this.translateService.use(lang);
   }
 
   ngDoCheck() {
-    console.log(++this.counter);
+    console.log(`Root DoCheck ${++this.counter}`);
   }
 }
